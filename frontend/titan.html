@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roschenca | Titan</title>
+  <meta name="description" content="Roschenca Titan — Sınırsız güç, sınırsız menzil. Pick-up SUV, 680 km menzil.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header-inner">
+        <a class="logo" href="index.html">
+          <img src="images/Logo.png" alt="Roschenca" style="height:34px;width:34px;object-fit:contain;border-radius:6px;flex-shrink:0;">
+          <span class="logo-text">Roschenca</span>
+        </a>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li class="has-dropdown" id="modelsDropdown">
+              <button class="nav-trigger" onclick="toggleDropdown()">
+                Modeller
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </button>
+              <div class="dropdown">
+                <a href="models.html">
+                  <span class="dropdown-dot" style="background:var(--emerald-600)"></span>
+                  <div><strong>Tüm Modeller</strong>
+                    <div class="dropdown-info">Araç ailemize genel bakış</div>
+                  </div>
+                </a>
+                <a href="aura.html">
+                  <span class="dropdown-dot" style="background:var(--emerald-400)"></span>
+                  <div><strong>Roschenca Aura</strong>
+                    <div class="dropdown-info">Zarif sedan · 720 km menzil</div>
+                  </div>
+                </a>
+                <a href="titan.html">
+                  <span class="dropdown-dot" style="background:var(--emerald-900)"></span>
+                  <div><strong>Roschenca Titan</strong>
+                    <div class="dropdown-info">Güçlü pick-up · 780 km menzil</div>
+                  </div>
+                </a>
+                <a href="mini.html">
+                  <span class="dropdown-dot" style="background:var(--emerald-600)"></span>
+                  <div><strong>Roschenca Mini</strong>
+                    <div class="dropdown-info">Kompakt şehir aracı · 320 km menzil</div>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li><a href="about.html">Hakkımızda</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+          </ul>
+        </nav>
+        <a class="btn-test-drive" href="contact.html">Test Sürüşü</a>
+        <button class="mobile-menu-btn" aria-label="Menü">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 5h16" />
+            <path d="M4 12h16" />
+            <path d="M4 19h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- TITAN PAGE -->
+  <main>
+    <section class="detail-hero">
+      <div class="container">
+        <div class="detail-hero-content">
+          <span class="detail-badge">Pick-Up SUV</span>
+          <h1>Roschenca <span>Titan</span></h1>
+          <p class="detail-tagline">Sınırsız güç, sınırsız menzil — her yolda efsane.</p>
+          <div class="detail-quick-specs">
+            <div class="quick-spec">
+              <div class="qs-value">780 km</div>
+              <div class="qs-label">Menzil</div>
+            </div>
+            <div class="quick-spec">
+              <div class="qs-value">3.8 sn</div>
+              <div class="qs-label">0-100 km/s</div>
+            </div>
+            <div class="quick-spec">
+              <div class="qs-value">260 km/s</div>
+              <div class="qs-label">Maks. Hız</div>
+            </div>
+            <div class="quick-spec">
+              <div class="qs-value">5 kişi</div>
+              <div class="qs-label">Koltuk</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="carousel-section">
+      <div class="container">
+        <div class="section-header"><span class="section-label">Galeri</span>
+          <h2 class="section-title">Titan'ı <span>Keşfedin</span></h2>
+        </div>
+        <div class="carousel-wrapper" id="carousel-titan">
+          <div class="carousel-track" id="titan-track">
+            <div class="carousel-slide"><img id="titan-img-0" src="" alt="Titan Önden Görünüm">
+              <div class="slide-caption">Titan — Önden Görünüm</div>
+            </div>
+            <div class="carousel-slide"><img id="titan-img-1" src="" alt="Titan İç Mekan">
+              <div class="slide-caption">Titan — Premium İç Mekan</div>
+            </div>
+            <div class="carousel-slide"><img id="titan-img-2" src="" alt="Titan Arkadan Görünüm">
+              <div class="slide-caption">Titan — Arkadan Görünüm</div>
+            </div>
+            <div class="carousel-slide"><img id="titan-img-3" src="" alt="Titan Yan Görünüm">
+              <div class="slide-caption">Titan — Yan Görünüm</div>
+            </div>
+          </div>
+          <button class="carousel-btn prev" onclick="moveCarousel('titan',-1)"><svg width="20" height="20"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="m15 18-6-6 6-6" />
+            </svg></button>
+          <button class="carousel-btn next" onclick="moveCarousel('titan',1)"><svg width="20" height="20"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="m9 18 6-6-6-6" />
+            </svg></button>
+        </div>
+        <div class="carousel-dots" id="titan-dots"></div>
+      </div>
+    </section>
+
+    <section class="specs-section">
+      <div class="container">
+        <div class="section-header"><span class="section-label">Teknik Özellikler</span>
+          <h2 class="section-title">Titan <span>Detayları</span></h2>
+        </div>
+        <div class="specs-grid">
+          <div class="spec-card">
+            <div class="spec-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="m12 14 4-4" />
+                <path d="M3.34 19a10 10 0 1 1 17.32 0" />
+              </svg></div>
+            <div class="spec-card-info">
+              <div class="sc-label">Maksimum Hız</div>
+              <div class="sc-value">260 km/s</div>
+            </div>
+          </div>
+          <div class="spec-card">
+            <div class="spec-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M 22 14 L 22 10" />
+                <rect x="2" y="6" width="16" height="12" rx="2" />
+              </svg></div>
+            <div class="spec-card-info">
+              <div class="sc-label">Menzil (WLTP)</div>
+              <div class="sc-value">780 km</div>
+            </div>
+          </div>
+          <div class="spec-card">
+            <div class="spec-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z" />
+              </svg></div>
+            <div class="spec-card-info">
+              <div class="sc-label">Motor Gücü</div>
+              <div class="sc-value">650 HP (485 kW)</div>
+            </div>
+          </div>
+          <div class="spec-card">
+            <div class="spec-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 6v6l4 2" />
+              </svg></div>
+            <div class="spec-card-info">
+              <div class="sc-label">0-100 km/s Hızlanma</div>
+              <div class="sc-value">3.8 saniye</div>
+            </div>
+          </div>
+          <div class="spec-card">
+            <div class="spec-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="8" width="18" height="12" rx="2" />
+                <path d="M10 8V5a2 2 0 0 1 4 0v3" />
+              </svg></div>
+            <div class="spec-card-info">
+              <div class="sc-label">Bagaj Hacmi</div>
+              <div class="sc-value">1.200 litre</div>
+            </div>
+          </div>
+          <div class="spec-card">
+            <div class="spec-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg></div>
+            <div class="spec-card-info">
+              <div class="sc-label">Koltuk Kapasitesi</div>
+              <div class="sc-value">5 Kişi</div>
+            </div>
+          </div>
+          <div class="spec-card">
+            <div class="spec-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 3v17.25" />
+                <path d="m6 14 6 6 6-6" />
+                <path d="M2 21h20" />
+              </svg></div>
+            <div class="spec-card-info">
+              <div class="sc-label">Boş Ağırlık</div>
+              <div class="sc-value">2.750 kg</div>
+            </div>
+          </div>
+          <div class="spec-card">
+            <div class="spec-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 3v17.25" />
+                <path d="m6 14 6 6 6-6" />
+                <path d="M2 21h20" />
+              </svg></div>
+            <div class="spec-card-info">
+              <div class="sc-label">Dolu Ağırlık (GVWR)</div>
+              <div class="sc-value">3.500 kg</div>
+            </div>
+          </div>
+          <div class="spec-card">
+            <div class="spec-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M 22 14 L 22 10" />
+                <rect x="2" y="6" width="16" height="12" rx="2" />
+              </svg></div>
+            <div class="spec-card-info">
+              <div class="sc-label">Batarya Kapasitesi</div>
+              <div class="sc-value">135 kWh</div>
+            </div>
+          </div>
+          <div class="spec-card">
+            <div class="spec-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 6v6l4 2" />
+              </svg></div>
+            <div class="spec-card-info">
+              <div class="sc-label">Hızlı Şarj (DC)</div>
+              <div class="sc-value">%10→97 — 9 dk</div>
+            </div>
+          </div>
+          <div class="spec-card">
+            <div class="spec-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="18" rx="2" />
+                <path d="M2 9h20" />
+              </svg></div>
+            <div class="spec-card-info">
+              <div class="sc-label">Tahrik Sistemi</div>
+              <div class="sc-value">AWD (4 Motor)</div>
+            </div>
+          </div>
+          <div class="spec-card">
+            <div class="spec-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105" />
+                <path d="M3 17.5c2.5-2.5 5.5-4 8.5-4s6 1.5 8.5 4" />
+              </svg></div>
+            <div class="spec-card-info">
+              <div class="sc-label">Çekiş Kapasitesi</div>
+              <div class="sc-value">4.500 kg</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding:4rem 0;background:linear-gradient(135deg,var(--emerald-600) 0%,#064e3b 100%);">
+      <div class="container">
+        <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:2rem;">
+          <div>
+            <span style="display:block;font-size:0.7rem;font-weight:700;color:#052e16;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.5rem;">Başlangıç Fiyatı</span>
+            <div style="font-size:3rem;font-weight:900;color:#fff;line-height:1;">2.150.000 <span style="color:#052e16;">TL</span></div>
+            <span style="font-size:0.78rem;color:#052e16;margin-top:0.4rem;display:block;">KDV dahil · Opsiyonel paketler hariç</span>
+          </div>
+          <a href="contact.html" style="display:inline-flex;align-items:center;gap:0.5rem;font-size:1rem;font-weight:700;padding:0.9rem 2rem;background:#fff;color:var(--emerald-700);border-radius:0.5rem;text-decoration:none;transition:opacity 0.2s;">Test Sürüşü Talep Et
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="logo" style="color:#fff" href="index.html">
+            <img src="images/Logo.png" alt="Roschenca" style="height:40px;width:40px;object-fit:contain;border-radius:6px;flex-shrink:0;"><span class="logo-text" style="font-size:1.5rem">Roschenca</span>
+          </a>
+          <p>Türk mühendisliğiyle tasarlanmış elektrikli araçlar. Sıfır emisyon, akıllı teknoloji ve güçlü performans.
+          </p>
+          <div class="footer-newsletter">
+            <h4>Bültenimize Abone Olun</h4>
+            <form class="newsletter-form" onsubmit="event.preventDefault();alert('Abone oldunuz!')"><input type="email"
+                placeholder="E-posta adresiniz" required><button type="submit"><svg width="16" height="16"
+                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
+                  <path d="m21.854 2.147-10.94 10.939" />
+                </svg></button></form>
+            <p class="newsletter-hint">Yeni modeller ve özel tekliflerden haberdar olun.</p>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Modeller</h4>
+          <ul>
+            <li><a href="aura.html">Roschenca Aura</a></li>
+            <li><a href="titan.html">Roschenca Titan</a></li>
+            <li><a href="mini.html">Roschenca Mini</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Kurumsal</h4>
+          <ul>
+            <li><a href="about.html">Hakkımızda</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Yasal</h4>
+          <ul>
+            <li><a href="#">Gizlilik Politikası</a></li>
+            <li><a href="#">Kullanım Koşulları</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-inner">
+          <div class="footer-bottom-left">
+            <span>© 2026 Roschenca. Tüm hakları saklıdır.</span>
+            <div class="divider"></div>
+            <a href="tel:+902120100000"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2">
+                <path
+                  d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
+              </svg>+90 (212) 010-0000</a>
+            <a href="mailto:info@roschenca.com.tr"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2">
+                <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+              </svg>info@roschenca.com.tr</a>
+          </div>
+          <button class="btn-top" onclick="window.scrollTo({top:0,behavior:'smooth'})"><svg width="16" height="16"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="m5 12 7-7 7 7" />
+              <path d="M12 19V5" />
+            </svg>Yukarı</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <!-- Titan carousel images (base64 embedded) -->
+  <script src="titan-images.js"></script>
+</body>
+
+</html>
